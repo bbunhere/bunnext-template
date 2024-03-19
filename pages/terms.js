@@ -3,8 +3,10 @@ export default function Terms() {
         <div className="container mx-auto mt-8">
             <h1 className="text-3xl font-bold mb-4">Terms of Service</h1>
             <p className="mb-4">
+                {/* eslint-disable-next-line react/no-unescaped-entities */}
                 These Terms of Service ("Terms") govern your access to and use of our services,
                 including our website and any other products or services provided by us (collectively,
+                {/* eslint-disable-next-line react/no-unescaped-entities */}
                 the "Services"). By accessing or using our Services, you agree to be bound by these Terms.
             </p>
             <p className="mb-4">

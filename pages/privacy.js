@@ -12,6 +12,7 @@ export default function Privacy() {
                 We collect it by fair and lawful means, with your knowledge and consent.
             </p>
             <p className="mb-4">
+                {/* eslint-disable-next-line react/no-unescaped-entities */}
                 We don't share any personally identifying information publicly or with third-parties,
                 except when required to by law.
             </p>
