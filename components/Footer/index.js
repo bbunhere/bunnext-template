@@ -1,4 +1,4 @@
-import "@/assets/Footer/index.css"
+import styles from "@/styles/Footer.module.css"
 import Link from "next/link"
 import Image from "next/image"
 import React from "react"
@@ -20,9 +20,9 @@ export default function Footer() {
                     <div>
                         {" "}
                         <Link href="/"
-                              className="flex items-center space-x-2 text-2xl font-medium text-dark-blue dark:text-gray-100">
+                            className="flex items-center space-x-2 text-2xl font-medium text-dark-blue dark:text-gray-100">
                             <Image
-                                src="/wtm.png"
+                                src="/logo.png"
                                 alt="N"
                                 width="32"
                                 height="32"
@@ -39,9 +39,9 @@ export default function Footer() {
                 <div>
                     <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
                         {navItem.map((item, index) => (
-                            <Link key={index} href="/"
-                                  className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-main focus:text-main focus:bg-indigo-100 focus:outline-none dark:focus:bg-sub">
-                                {item}
+                            <Link key={index} href={item.link}
+                                className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-main focus:text-main focus:bg-indigo-100 focus:outline-none dark:focus:bg-sub">
+                                {item.name}
                             </Link>
                         ))}
                     </div>
@@ -49,9 +49,9 @@ export default function Footer() {
                 <div>
                     <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
                         {navSubItem.map((item, index) => (
-                            <Link key={index} href="/"
-                                  className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-main focus:text-main focus:bg-indigo-100 focus:outline-none dark:focus:bg-sub">
-                                {item}
+                            <Link key={index} href={item.link}
+                                className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-main focus:text-main focus:bg-indigo-100 focus:outline-none dark:focus:bg-sub">
+                                {item.name}
                             </Link>
                         ))}
                     </div>
@@ -64,7 +64,7 @@ export default function Footer() {
                             target="_blank"
                             rel="noopener">
                             <span className="sr-only">Twitter</span>
-                            <Twitter/>
+                            <Twitter />
                         </a>
                         <a
                             href="#"

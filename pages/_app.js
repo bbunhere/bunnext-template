@@ -1,6 +1,6 @@
 import { ThemeProvider } from "next-themes"
 import Head from 'next/head'
-import "@/assets/globals.css"
+import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
     return (

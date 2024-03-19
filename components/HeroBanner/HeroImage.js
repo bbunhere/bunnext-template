@@ -1,5 +1,5 @@
 import React from "react"
-import "@/assets/HeroBanner/index.css"
+import styles from "@/styles/HeroBanner.module.css"
 
 export const HeroImage = () => {
     return (
@@ -7,9 +7,9 @@ export const HeroImage = () => {
             <div className="main-wrapper top-0 left-0">
                 <div className="absolute images-wrapper">
                     <div className="sub-images-wrapper absolute top-0 left-0">
-                        <div className="circle-01 absolute bg-main rounded-full opacity-50"></div>
-                        <div className="circle-02 absolute bg-sub rounded-full opacity-60" />
-                        <div className="circle-03 absolute bg-sub rounded-full opacity-60" />
+                        <div className={`${styles.circle01} absolute bg-main rounded-full opacity-50`}></div>
+                        <div className={`${styles.circle02} absolute bg-sub rounded-full opacity-60`} />
+                        <div className={`${styles.circle03} absolute bg-sub rounded-full opacity-60`} />
                         <div className="circle-04 absolute bg-main rounded-full opacity-80" />
                         <div className="circle-05 absolute bg-main rounded-full opacity-70" />
                         <img

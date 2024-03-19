@@ -1,4 +1,4 @@
-import "@/assets/HeroBanner/index.css"
+import Link from "next/link"
 import { HeroImage } from "./HeroImage"
 
 export default function HeroBanner() {
@@ -10,7 +10,8 @@ export default function HeroBanner() {
                         <span className="text-main">BunNext</span> <span className="text-sub">Template</span>
                     </h1>
                     <p className="py-5 text-xl font-extralight leading-normal lg:text-xl xl:text-2xl  dark:text-wtm-white">
-                        Women Techmakers Ho Chi Minh City was founded on October 20th, 2022. The organization is passionate about building a community supporting women (and everyone) to thrive and lead in technology.
+                        Home page template built with NextJS and Tailwindcss. <br></br>
+                        Make by <Link href="https://github.com/bunheree">@bunhere</Link>
                     </p>
 
                     <div

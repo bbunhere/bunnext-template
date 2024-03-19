@@ -1,58 +1,58 @@
 /* This is a custom style for the HeroBanner component. */
 
 /* Change size for hero image here */
-.main-wrapper {
+.main_wrapper {
     width: 700px;
     height: 700px;
 }
 
-.images-wrapper {
+.images_wrapper {
     width: 100%;
     height: 100%;
 }
 
-.sub-images-wrapper {
+.sub_images_wrapper {
     width: 100%;
     height: 100%;
 }
 
 /* START: Circles */
-.circle-01 {
+.circle01 {
     top: 15%;
     left: 21%;
     width: 8%;
     height: 8%;
 }
 
-.circle-02 {
+.circle02 {
     top: 94%;
     left: 52%;
     width: 6.5%;
     height: 6.5%;
 }
 
-.circle-03 {
+.circle03 {
     top: 11%;
     left: 93%;
     width: 8%;
     height: 8%;
 }
 
-.circle-04 {
+.circle04 {
     top: 15%;
     left: 24%;
     width: 73%;
     height: 73%;
 }
 
-.circle-05 {
+.circle_05 {
     top: 37%;
     left: 98%;
     width: 8.5%;
     height: 8.5%;
 }
 
-.circle-06 {
+.circle_06 {
     top: 47%;
     left: 0;
     width: 10%;
@@ -60,40 +60,40 @@
 }
 /* END: Circles */
 
-.hero-img-01 {
+.hero_img_01 {
     top: 0;
     left: 37%;
     width: 55%;
     height: 55%;
 }
 
-.hero-img-02 {
+.hero_img_02 {
     top: 45%;
     left: 3%;
     width: 48%;
     height: 48%;
 }
 
-.hero-img-03 {
+.hero_img_03 {
     top: 58%;
     left: 60%;
     width: 40%;
     height: 40%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max_width: 768px) {
 
     /* Change size for hero image on tablet here */
-    .main-wrapper {
+    .main_wrapper {
         width: 600px;
         height: 600px;
     }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max_width: 390px) {
 
     /* Change size for hero image on mobile here */
-    .main-wrapper {
+    .main_wrapper {
         width: 300px;
         height: 300px;
     }
