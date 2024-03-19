@@ -6,7 +6,7 @@ export default function Home() {
     return (
         <>
             <Navbar />
-            <main className="container p-8 mx-auto xl:px-0">
+            <main className="container max-w-screen-2xl px-8 mx-auto">
                 <HeroBanner />
                 <Footer />
             </main>

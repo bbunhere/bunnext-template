@@ -15,7 +15,7 @@ export default function Footer() {
     return (
         <div className="relative">
             <div
-                className="grid max-w-screen-xl grid-cols-1 gap-10 pt-10 mx-auto mt-5 border-t border-gray-100 dark:border-sub lg:grid-cols-5">
+                className="grid grid-cols-1 gap-10 pt-10 mx-auto mt-5 border-t border-gray-100 dark:border-sub lg:grid-cols-5">
                 <div className="lg:col-span-2">
                     <div>
                         {" "}
@@ -40,7 +40,7 @@ export default function Footer() {
                     <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
                         {navItem.map((item, index) => (
                             <Link key={index} href={item.link}
-                                className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-main focus:text-main focus:bg-indigo-100 focus:outline-none dark:focus:bg-sub">
+                                className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-main dark:hover:text-main-dark ">
                                 {item.name}
                             </Link>
                         ))}
@@ -50,38 +50,38 @@ export default function Footer() {
                     <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
                         {navSubItem.map((item, index) => (
                             <Link key={index} href={item.link}
-                                className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-main focus:text-main focus:bg-indigo-100 focus:outline-none dark:focus:bg-sub">
+                                className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-main dark:hover:text-main-dark">
                                 {item.name}
                             </Link>
                         ))}
                     </div>
                 </div>
                 <div className="">
-                    <div className="dark:text-wtm-white">Follow us</div>
-                    <div className="flex mt-5 space-x-5 text-gray-400 dark:text-gray-500">
-                        <a
+                    <div className="dark:text-main-dark">Follow us</div>
+                    <div className="flex mt-5 space-x-5 text-main dark:text-main-dark">
+                        <a className="hover:text-sub dark:hover:text-sub-dark"
                             href="https://twitter.com/bunhere_"
                             target="_blank"
                             rel="noopener">
                             <span className="sr-only">Twitter</span>
                             <Twitter />
                         </a>
-                        <a
+                        <a className="hover:text-sub dark:hover:text-sub-dark"
                             href="#"
                             target="_blank"
                             rel="noopener">
                             <span className="sr-only">Facebook</span>
                             <Facebook />
                         </a>
-                        <a
+                        <a className="hover:text-sub dark:hover:text-sub-dark"
                             href="#"
                             target="_blank"
                             rel="noopener">
                             <span className="sr-only">Linkedin</span>
                             <Linkedin />
                         </a>
-                        <a
-                            href="https://github.com/bunheree"
+                        <a className="hover:text-sub dark:hover:text-sub-dark"
+                            href="https://github.com/bunheree/bunnext-template"
                             target="_blank"
                             rel="noopener">
                             <span className="sr-only">Gibhub</span>

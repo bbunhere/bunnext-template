@@ -2,6 +2,8 @@
 
 This is a [Next.js](https://nextjs.org/) and TailwindCSS project template create by [Bun(@bunhere)](https://bunhere.com/)
 
+![BunNext Landing page Template](./public/images/banner.png)
+
 ## Quick Started
 
 Run the development server:

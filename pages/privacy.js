@@ -23,8 +23,7 @@ export default function Privacy() {
             <p className="mb-4">
                 Your continued use of our website will be regarded as acceptance of our practices
                 around privacy and personal information. If you have any questions about how we handle
-                user data and personal information, feel free to contact us at
-                <a href="mailto:emma.ngo1110@gmail.com" className="text-blue-500">emma.ngo1110@gmail.com</a>.
+                user data and personal information, feel free to contact us at <a href="mailto:emma.ngo1110@gmail.com" className="text-blue-500">emma.ngo1110@gmail.com</a>.
             </p>
         </div>
     )

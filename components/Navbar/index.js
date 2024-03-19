@@ -66,13 +66,13 @@ export default function Navbar() {
                                     <>
                                         {navItem.map((item, index) => (
                                             <Link key={index} href={item.link}
-                                                className={`w-full px-4 py-2 -ml-4 text-main dark:text-gray-300 hover:font-bold  ${isActive(item.link) ? 'dark:bg-gray-800 border-b-2 border-main' : ''}`}>
+                                                className={`w-full px-4 py-2 -ml-4 text-main dark:text-gray-300 hover:font-bold border-main dark:border-main-dark ${isActive(item.link) ? 'border-b-2' : ''}`}>
                                                 {item.name}
                                             </Link>
                                         ))}
                                         <Link href="https://bunnext.bunhere.com"
                                             target="_blank"
-                                            className="w-full px-6 py-2 mt-3 text-center font-semibold border text-main border-main hover:bg-main hover:text-white rounded-full lg:ml-5">
+                                            className="w-full px-6 py-2 mt-3 text-center font-semibold border text-main border-main hover:bg-main hover:text-white rounded-full lg:ml-5 dark:text-main-dark dark:border-main-dark dark:hover:bg-main-dark dark:hover:text-main">
                                             Join Us
                                         </Link>
                                     </>
@@ -89,7 +89,7 @@ export default function Navbar() {
                             {navItem.map((menu, index) => (
                                 <li className="mr-3 nav__item" key={index}>
                                     <Link href={menu.link}
-                                        className={`inline-block px-4 py-2 text-lg font-normal text-main dark:text-gray-300 hover:border-b-2 border-main ${isActive(menu.link) ? "font-bold dark:bg-gray-800  border-b-2" : ""}`}>
+                                        className={`inline-block px-4 py-2 text-lg font-normal text-main dark:text-gray-300 hover:border-b-2 border-main dark:border-main-dark ${isActive(menu.link) ? "font-bold border-b-2" : ""}`}>
                                         {menu.name}
                                     </Link>
                                 </li>
@@ -98,7 +98,7 @@ export default function Navbar() {
                     </div>
 
                     <div className="hidden mr-3 space-x-4 lg:flex nav__item">
-                        <Link href="https://bunnext.bunhere.com" target="_blank" className="px-6 py-2 font-semibold border text-main border-main hover:bg-main hover:text-white rounded-full md:ml-5">
+                        <Link href="https://bunnext.bunhere.com" target="_blank" className="px-6 py-2 font-semibold border text-main border-main hover:bg-main hover:text-white rounded-full md:ml-5 dark:text-main-dark dark:border-main-dark dark:hover:bg-main-dark dark:hover:text-main">
                             Join Us
                         </Link>
 

@@ -18,8 +18,7 @@ export default function Terms() {
                 of the revised Terms.
             </p>
             <p className="mb-4">
-                If you have any questions about these Terms, please contact us at
-                <a href="mailto:emma.ngo1110@gmail.com" className="text-blue-500">emma.ngo1110@gmail.com</a>.
+                If you have any questions about these Terms, please contact us at <a href="mailto:emma.ngo1110@gmail.com" className="text-blue-500">emma.ngo1110@gmail.com</a>.
             </p>
         </div>
     )
