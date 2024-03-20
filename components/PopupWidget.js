@@ -1,7 +1,6 @@
 import React, { useState } from "react"
-import { useForm, useWatch } from "react-hook-form"
+import { useForm } from "react-hook-form"
 import { Disclosure, Transition } from "@headlessui/react"
-import { WEB3FORM_ACCESS_KEY } from "@/utils/config"
 
 const PopupWidget = () => {
     const {
@@ -16,11 +15,10 @@ const PopupWidget = () => {
     const [isSuccess, setIsSuccess] = useState(false)
     const [Message, setMessage] = useState("")
 
-    const userName = useWatch({ control, name: "name", defaultValue: "Someone" })
-
     const onSubmit = async (data, e) => {
         console.log(data)
-        await fetch("https://api.web3forms.com/submit", {
+        /* Todo: Replace submit-endpoint with method submit form
+        await fetch("#submit-endpoint", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -45,6 +43,7 @@ const PopupWidget = () => {
                 setMessage("Client Error. Please check the console.log for more info")
                 console.log(error)
             })
+            */
     }
 
     return (
@@ -119,26 +118,6 @@ const PopupWidget = () => {
                                 <div className="flex-grow h-full p-6 overflow-auto bg-gray-50 ">
                                     {!isSubmitSuccessful && (
                                         <form onSubmit={handleSubmit(onSubmit)} noValidate>
-                                            <input
-                                                type="hidden"
-                                                value={WEB3FORM_ACCESS_KEY}
-                                                {...register("apikey")}
-                                            />
-                                            <input
-                                                type="hidden"
-                                                value={`${userName} sent a message from BunNext`}
-                                                {...register("subject")}
-                                            />
-                                            <input
-                                                type="hidden"
-                                                value="BunNext Template"
-                                                {...register("from_name")}
-                                            />
-                                            <input
-                                                type="checkbox"
-                                                className="hidden"
-                                                style={{ display: "none" }}
-                                                {...register("botcheck")}></input>
 
                                             <div className="mb-4">
                                                 <label
@@ -155,8 +134,8 @@ const PopupWidget = () => {
                                                         maxLength: 80,
                                                     })}
                                                     className={`w-full px-3 py-2 text-gray-600 placeholder-gray-300 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring   ${errors.name
-                                                            ? "border-red-600 focus:border-red-600 ring-red-100"
-                                                            : "border-gray-300 focus:border-main ring-indigo-100"
+                                                        ? "border-red-600 focus:border-red-600 ring-red-100"
+                                                        : "border-gray-300 focus:border-main ring-indigo-100"
                                                         }`}
                                                 />
                                                 {errors.name && (
@@ -184,8 +163,8 @@ const PopupWidget = () => {
                                                     })}
                                                     placeholder="contact@bunhere.com"
                                                     className={`w-full px-3 py-2 text-gray-600 placeholder-gray-300 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring   ${errors.email
-                                                            ? "border-red-600 focus:border-red-600 ring-red-100"
-                                                            : "border-gray-300 focus:border-main ring-indigo-100"
+                                                        ? "border-red-600 focus:border-red-600 ring-red-100"
+                                                        : "border-gray-300 focus:border-main ring-indigo-100"
                                                         }`}
                                                 />
 
@@ -211,8 +190,8 @@ const PopupWidget = () => {
                                                     })}
                                                     placeholder="Your Message"
                                                     className={`w-full px-3 py-2 text-gray-600 placeholder-gray-300 bg-white border border-gray-300 rounded-md h-28 focus:outline-none focus:ring   ${errors.message
-                                                            ? "border-red-600 focus:border-red-600 ring-red-100"
-                                                            : "border-gray-300 focus:border-main ring-indigo-100"
+                                                        ? "border-red-600 focus:border-red-600 ring-red-100"
+                                                        : "border-gray-300 focus:border-main ring-indigo-100"
                                                         }`}
                                                     required></textarea>
                                                 {errors.message && (
@@ -248,20 +227,6 @@ const PopupWidget = () => {
                                                     )}
                                                 </button>
                                             </div>
-                                            <p
-                                                className="text-xs text-center text-gray-400"
-                                                id="result">
-                                                <span>
-                                                    Powered by{" "}
-                                                    <a
-                                                        href="https://Web3Forms.com"
-                                                        className="text-gray-600"
-                                                        target="_blank"
-                                                        rel="noopener noreferrer">
-                                                        Web3Forms
-                                                    </a>
-                                                </span>
-                                            </p>
                                         </form>
                                     )}
 
