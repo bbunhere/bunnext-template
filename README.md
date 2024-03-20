@@ -37,3 +37,7 @@ Light mode | Dark mode
 Reference: [Web3Form](https://web3forms.com/)
 
 Update the `.env` file for the `NEXT_PUBLIC_WEB3FORM_ACCESS_KEY` value with [Web3Form Document](https://docs.web3forms.com/).
+
+## Licence
+
+[MIT](https://github.com/bunheree/bunnext-template/blob/main/LICENSE) © 2024 - [Emma Ngo](https://bunhere.com/about)
